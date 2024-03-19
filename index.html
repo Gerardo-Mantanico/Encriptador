@@ -3,33 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptacion</title>
-    <link rel="stylesheet" href="/styli.css">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<header>
-    <div>
-        <img src="/Logo.svg" alt="logo">
-    </div>
-</header>
-
 <body>
-    <div>
-        <div class="container">
-            <input class="input-text" type="text" placeholder="Ingrese el texto aqui">
-            <span>solo letras minusculas y sin acentos</span>
+    <header>
+        <img src="img/logo.png" alt="logo">
+    </header>
+    <div class="container">
+        <div class="container-left">
+            <textarea class="input-text" cols="30" rows="10" placeholder="Ingrese el texto aqui" required ></textarea>
+            <p> &#9888 Solo letras minúsculas y sin acentos</p>
             <div class="container-button">
-                <input class="input-button" type="button" value="Encriptar">
-                <input class="input-button input-secund" type="button" value="Desencriptar">
+                <input class="input-button" type="button" value="Encriptar" onclick="incriptar()">
+                <input class="input-button  input-segundario" type="button" value="Desencriptar">
             </div>
         </div>
-        <div class="cart">
-            <img src="/Muñeco.svg" alt="muneco">
-            <div class="container-msj">
-                <h1>Ningun mensaje fue encontrado</h1>
-                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        <div class="container-right">
+            <div>
+                <img src="img/Muñeco.png" alt="Muñeco">
+            </div>
+            <div class="container-text">
+                    <h1>Ningun mensaje fue</h1>
+                    <h1>encontrado</h1>
+                    <br>
+                    <p>Ingresa el texto que desees encriptar o </p>
+                    <p>desencriptar</p>
             </div>
         </div>
     </div>
+    <script src="/js/logica.js"></script>
 </body>
-
 </html>
